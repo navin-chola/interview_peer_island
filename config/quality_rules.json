@@ -1,0 +1,42 @@
+{
+  "rules_version": "1.0",
+  "rules": [
+    {
+      "rule_id": "DQ001",
+      "column": "source_system",
+      "type": "not_null",
+      "severity": "ERROR"
+    },
+    {
+      "rule_id": "DQ002",
+      "column": "source_record_id",
+      "type": "not_null",
+      "severity": "ERROR"
+    },
+    {
+      "rule_id": "DQ003",
+      "column": "name",
+      "type": "not_null",
+      "severity": "ERROR"
+    },
+    {
+      "rule_id": "DQ004",
+      "column": "email_normalized",
+      "type": "email_if_present",
+      "severity": "ERROR"
+    },
+    {
+      "rule_id": "DQ005",
+      "column": "country_code",
+      "type": "allowed_values",
+      "values": [
+        "US",
+        "GB",
+        "IN",
+        "CA",
+        "AU"
+      ],
+      "severity": "WARN"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "default_source_precedence": {
+    "CRM": 1,
+    "BILLING": 2,
+    "WEB": 3
+  },
+  "attribute_source_precedence": {
+    "name": {
+      "CRM": 1,
+      "BILLING": 2,
+      "WEB": 3
+    },
+    "email_normalized": {
+      "CRM": 1,
+      "WEB": 2,
+      "BILLING": 3
+    },
+    "phone_normalized": {
+      "CRM": 1,
+      "BILLING": 2,
+      "WEB": 3
+    },
+    "address_normalized": {
+      "BILLING": 1,
+      "CRM": 2,
+      "WEB": 3
+    },
+    "country_code": {
+      "CRM": 1,
+      "BILLING": 2,
+      "WEB": 3
+    }
+  }
+}
